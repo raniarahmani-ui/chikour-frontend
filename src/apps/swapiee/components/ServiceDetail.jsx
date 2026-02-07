@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/componentstyle/ServiceDetail.css";
 import image from "../assets/image.png";
 import { Trash, Edit } from "lucide-react";
-import ConfirmDelete from "../components/ConfirmDelete";
+import ConfirmDelete from "./confirmdelete";
 
 function ServiceDetail({ service }) {
   const [openPopup, setOpenPopup] = useState(false);
@@ -17,7 +17,7 @@ function ServiceDetail({ service }) {
     try {
       const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
       if (Array.isArray(parsed) && parsed.length > 0) return parsed[0];
-    } catch {}
+    } catch { }
     return typeof raw === "string" && raw.length > 3 ? raw : image;
   };
 

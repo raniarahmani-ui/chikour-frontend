@@ -1,0 +1,65 @@
+﻿Connected successfully to REMOTE database.
+
+Checking columns for 'messages':
+- id (int)
+- sender_id (int)
+- receiver_id (int)
+- service_id (int)
+- demand_id (int)
+- content (text)
+- is_read (tinyint(1))
+- read_at (datetime)
+- created_at (timestamp)
+
+Checking columns for 'notifications':
+- id (int)
+- user_id (int)
+- type (enum('message','transaction','rating','report','system','service','demand'))
+- title (varchar(200))
+- content (text)
+- reference_id (int)
+- reference_type (varchar(50))
+- is_read (tinyint(1))
+- read_at (datetime)
+- created_at (timestamp)
+
+Checking columns for 'error_logs':
+Error describing error_logs: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'railway.error_logs' doesn't exist
+
+Checking columns for 'users':
+- id (int)
+- username (varchar(50))
+- email (varchar(100))
+- password (varchar(255))
+- full_name (varchar(100))
+- phone (varchar(20))
+- bio (text)
+- skills (text)
+- profile_image (varchar(255))
+- location (varchar(100))
+- coins (int)
+- rating (decimal(3,2))
+- total_ratings (int)
+- is_active (tinyint(1))
+- is_verified (tinyint(1))
+- email_verified_at (datetime)
+- last_login (datetime)
+- created_at (timestamp)
+- updated_at (timestamp)
+- reset_code_hash (varchar(255))
+- reset_code_expires (datetime)
+
+Checking columns for 'transactions':
+- id (int)
+- service_id (int)
+- demand_id (int)
+- from_user_id (int)
+- to_user_id (int)
+- coins (int)
+- type (enum('service_payment','demand_payment','bonus','refund','purchase'))
+- status (enum('pending','completed','cancelled','disputed'))
+- notes (text)
+- created_at (timestamp)
+- updated_at (timestamp)
+
+

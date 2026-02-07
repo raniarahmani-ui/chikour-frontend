@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "functions": {
+        "backend/index.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "backend/index.php"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/frontend/$1",
+            "check": true
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/frontend/index.html"
+        }
+    ]
+}

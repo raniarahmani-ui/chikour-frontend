@@ -1,0 +1,1178 @@
+[26-Jan-2026 19:33:21 UTC] Database Connection Error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[26-Jan-2026 19:33:21 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed in C:\Users\dell\Desktop\Structured project\backend\config\database.php:34
+Stack trace:
+#0 C:\Users\dell\Desktop\Structured project\backend\api\auth.php(16): Database->getConnection()
+#1 C:\Users\dell\Desktop\Structured project\backend\index.php(61): require_once('C:\\Users\\dell\\D...')
+#2 C:\Users\dell\Desktop\Structured project\backend\router.php(21): require('C:\\Users\\dell\\D...')
+#3 {main}
+  thrown in C:\Users\dell\Desktop\Structured project\backend\config\database.php on line 34
+[26-Jan-2026 19:34:02 UTC] Database Connection Error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[26-Jan-2026 19:34:02 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed in C:\Users\dell\Desktop\Structured project\backend\config\database.php:34
+Stack trace:
+#0 C:\Users\dell\Desktop\Structured project\backend\api\auth.php(16): Database->getConnection()
+#1 C:\Users\dell\Desktop\Structured project\backend\index.php(61): require_once('C:\\Users\\dell\\D...')
+#2 C:\Users\dell\Desktop\Structured project\backend\router.php(21): require('C:\\Users\\dell\\D...')
+#3 {main}
+  thrown in C:\Users\dell\Desktop\Structured project\backend\config\database.php on line 34
+[29-Jan-2026 11:04:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\Users\dell\Desktop\Structured project\backend\models\User.php:29
+Stack trace:
+#0 C:\Users\dell\Desktop\Structured project\backend\models\User.php(29): PDOStatement->execute(Array)
+#1 C:\Users\dell\Desktop\Structured project\backend\api\auth.php(113): User->authenticate('testuser3', 'Password1')
+#2 C:\Users\dell\Desktop\Structured project\backend\api\auth.php(45): userLogin(Array, Object(User))
+#3 C:\Users\dell\Desktop\Structured project\backend\api\auth.php(31): handlePost('user-login', Object(Admin), Object(User))
+#4 C:\Users\dell\Desktop\Structured project\backend\index.php(61): require_once('C:\\Users\\dell\\D...')
+#5 C:\Users\dell\Desktop\Structured project\backend\router.php(21): require('C:\\Users\\dell\\D...')
+#6 {main}
+  thrown in C:\Users\dell\Desktop\Structured project\backend\models\User.php on line 29
+[29-Jan-2026 13:02:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Validator::__construct(), 0 passed in C:\Users\dell\Desktop\Structured project\backend\api\messages.php on line 24 and exactly 1 expected in C:\Users\dell\Desktop\Structured project\backend\utils\Validator.php:11
+Stack trace:
+#0 C:\Users\dell\Desktop\Structured project\backend\api\messages.php(24): Validator->__construct()
+#1 C:\Users\dell\Desktop\Structured project\backend\index.php(85): require_once('C:\\Users\\dell\\D...')
+#2 C:\Users\dell\Desktop\Structured project\backend\router.php(21): require('C:\\Users\\dell\\D...')
+#3 {main}
+  thrown in C:\Users\dell\Desktop\Structured project\backend\utils\Validator.php on line 11
+[29-Jan-2026 13:28:02 UTC] PHP Warning:  Undefined array key "id" in C:\Users\dell\Desktop\Structured project\backend\api\messages.php on line 50
+[29-Jan-2026 13:28:24 UTC] PHP Warning:  Undefined array key "id" in C:\Users\dell\Desktop\Structured project\backend\api\messages.php on line 50
+[06-Feb-2026 09:45:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar' in 'field list' in C:\xampp\htdocs\backend\backend\api\amanda\profile.php:32
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\profile.php(32): PDO->prepare('SELECT id, user...')
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\profile.php on line 32
+[06-Feb-2026 09:45:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar' in 'field list' in C:\xampp\htdocs\backend\backend\api\amanda\profile.php:32
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\profile.php(32): PDO->prepare('SELECT id, user...')
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\profile.php on line 32
+[06-Feb-2026 09:49:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:49:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:49:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:49:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'avatar' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:50:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:50:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:51:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email_verified' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:51:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email_verified' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:52:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email_verified' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:52:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email_verified' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:54:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coin_balance' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:54:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coin_balance' in 'field list' in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:33
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(33): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 33
+[06-Feb-2026 09:56:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\backend\backend\api\profile.php:63
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(63): PDO->prepare('SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(43): fetchCount(Object(PDO), 'SELECT COUNT(*)...', 7)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(18): getProfile(Object(PDO), 7)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\profile.php on line 63
+[06-Feb-2026 09:56:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\backend\backend\api\profile.php:63
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(63): PDO->prepare('SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(43): fetchCount(Object(PDO), 'SELECT COUNT(*)...', 7)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(18): getProfile(Object(PDO), 7)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\profile.php on line 63
+[06-Feb-2026 10:01:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\profile.php:63
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(63): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(42): fetchCount(Object(PDO), 'SELECT COUNT(*)...', 7)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(18): getProfile(Object(PDO), 7)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\profile.php on line 63
+[06-Feb-2026 10:01:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\profile.php:63
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(63): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(42): fetchCount(Object(PDO), 'SELECT COUNT(*)...', 7)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(18): getProfile(Object(PDO), 7)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\profile.php on line 63
+[06-Feb-2026 10:02:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\profile.php:63
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(63): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(42): fetchCount(Object(PDO), 'SELECT COUNT(*)...', 7)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(18): getProfile(Object(PDO), 7)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\profile.php on line 63
+[06-Feb-2026 10:02:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\profile.php:63
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(63): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(42): fetchCount(Object(PDO), 'SELECT COUNT(*)...', 7)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(18): getProfile(Object(PDO), 7)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\profile.php on line 63
+[06-Feb-2026 10:04:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coin_balance' in 'field list' in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:32
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(32): PDO->prepare('SELECT coin_bal...')
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 32
+[06-Feb-2026 10:04:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coin_balance' in 'field list' in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:32
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(32): PDO->prepare('SELECT coin_bal...')
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 32
+[06-Feb-2026 10:04:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coin_balance' in 'field list' in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:32
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(32): PDO->prepare('SELECT coin_bal...')
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 32
+[06-Feb-2026 10:05:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coin_balance' in 'field list' in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:32
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(32): PDO->prepare('SELECT coin_bal...')
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 32
+[06-Feb-2026 10:08:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:08:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:43
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(43): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 43
+[06-Feb-2026 10:11:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:49
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 49
+[06-Feb-2026 10:11:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:49
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 49
+[06-Feb-2026 10:11:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:49
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 49
+[06-Feb-2026 10:11:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:49
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 49
+[06-Feb-2026 10:11:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:49
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 49
+[06-Feb-2026 10:12:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:13:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:13:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:13:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:13:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:13:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:13:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:14:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 10:16:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 12:32:41 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 12:32:41 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\auth.php(12): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(54): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 12:32:47 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 12:32:47 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\auth.php(12): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(54): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 12:32:49 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 12:32:49 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\auth.php(12): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(54): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 12:36:25 UTC] Database Connection Error: SQLSTATE[HY000] [1049] Unknown database 'swapie_db'
+[06-Feb-2026 12:36:25 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Local in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(9): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 12:37:24 UTC] Database Connection Error: SQLSTATE[HY000] [1049] Unknown database 'swapie_db'
+[06-Feb-2026 12:37:24 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Local in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(9): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 12:37:24 UTC] Database Connection Error: SQLSTATE[HY000] [1049] Unknown database 'swapie_db'
+[06-Feb-2026 12:37:24 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Local in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\profile.php(9): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 12:46:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skills' in 'field list' in C:\xampp\htdocs\backend\backend\models\User.php:270
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\models\User.php(270): PDO->prepare('UPDATE users SE...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(49): User->update(8, Array)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(21): updateProfile(Object(PDO), 8)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\models\User.php on line 270
+[06-Feb-2026 12:46:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skills' in 'field list' in C:\xampp\htdocs\backend\backend\models\User.php:270
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\models\User.php(270): PDO->prepare('UPDATE users SE...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(49): User->update(8, Array)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(21): updateProfile(Object(PDO), 8)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\models\User.php on line 270
+[06-Feb-2026 12:46:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skills' in 'field list' in C:\xampp\htdocs\backend\backend\models\User.php:270
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\models\User.php(270): PDO->prepare('UPDATE users SE...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(49): User->update(8, Array)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(21): updateProfile(Object(PDO), 8)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\models\User.php on line 270
+[06-Feb-2026 12:46:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skills' in 'field list' in C:\xampp\htdocs\backend\backend\models\User.php:270
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\models\User.php(270): PDO->prepare('UPDATE users SE...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(49): User->update(8, Array)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(21): updateProfile(Object(PDO), 8)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\models\User.php on line 270
+[06-Feb-2026 12:46:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skills' in 'field list' in C:\xampp\htdocs\backend\backend\models\User.php:270
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\models\User.php(270): PDO->prepare('UPDATE users SE...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(49): User->update(8, Array)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(21): updateProfile(Object(PDO), 8)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\models\User.php on line 270
+[06-Feb-2026 12:46:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skills' in 'field list' in C:\xampp\htdocs\backend\backend\models\User.php:270
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\models\User.php(270): PDO->prepare('UPDATE users SE...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(49): User->update(8, Array)
+#2 C:\xampp\htdocs\backend\backend\api\profile.php(21): updateProfile(Object(PDO), 8)
+#3 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\backend\backend\models\User.php on line 270
+[06-Feb-2026 12:49:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'swapie_db.users' doesn't exist in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:34
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(34): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 34
+[06-Feb-2026 12:49:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'swapie_db.users' doesn't exist in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php:34
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php(34): PDO->prepare('SELECT id, user...')
+#1 C:\xampp\htdocs\backend\backend\api\profile.php(12): UserAuthMiddleware->authenticate()
+#2 C:\xampp\htdocs\backend\backend\index.php(81): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\backend\backend\middleware\UserAuthMiddleware.php on line 34
+[06-Feb-2026 13:01:52 UTC] Database Connection Error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[06-Feb-2026 13:01:59 UTC] Database Connection Error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[06-Feb-2026 13:02:36 UTC] Database Connection Error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[06-Feb-2026 13:02:44 UTC] Database Connection Error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[06-Feb-2026 13:05:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:05:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:29:59 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Ceci est habituellement une erreur temporaire qui se produit durant la résolution du nom d’hôte et qui signifie que le serveur local n’a pas reçu de réponse d’un serveur faisant autorité. 
+[06-Feb-2026 13:29:59 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 13:49:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:49:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:49:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:49:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:52:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:52:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:52:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:52:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:56:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:58:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 13:58:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:03:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:03:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:03:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:04:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:04:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:05:42 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 14:05:42 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 14:09:47 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:09:48 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:09:52 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:09:57 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:10:02 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:10:07 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:10:12 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:10:17 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:10:22 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.avatar' in 'field list'
+[06-Feb-2026 14:10:27 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:10:32 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:10:37 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:10:42 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:10:47 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:10:52 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:25 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:27 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:28 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:31 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:32 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:36 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:41 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:46 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:51 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:11:56 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:12:01 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.status' in 'field list'
+[06-Feb-2026 14:12:06 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:11 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:16 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:21 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:22 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:23 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:27 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:33 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:38 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:43 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:48 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:53 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:12:58 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:03 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:08 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:13 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:18 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:23 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:28 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:13:41 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:14:41 UTC] Messages API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'message' in 'field list'
+[06-Feb-2026 14:15:41 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:16:41 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:17:41 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:19 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:22 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:27 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:33 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:38 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:43 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:48 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:53 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:18:58 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:19:03 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:19:08 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:19:13 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:19:18 UTC] Messages API Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'railway.u.username' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[06-Feb-2026 14:22:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:22:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:22:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:22:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:22:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:22:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:22:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:27:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:27:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:27:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:30:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:34:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:34:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:34:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:34:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:34:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:34:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:38:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:39:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:39:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:48:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:48:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:48:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:48:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:57:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:57:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:59:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 14:59:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 15:07:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 15:07:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 15:07:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 15:07:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 15:34:53 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 15:34:53 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 15:41:42 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Ceci est habituellement une erreur temporaire qui se produit durant la résolution du nom d’hôte et qui signifie que le serveur local n’a pas reçu de réponse d’un serveur faisant autorité. 
+[06-Feb-2026 15:41:42 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 16:13:46 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:13:47 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:13:47 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:13:47 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 16:13:52 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:13:53 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:13:53 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:13:53 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 16:29:25 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:31:55 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:31:55 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:54:10 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:54:10 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:54:20 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 16:54:20 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:01:06 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:01:06 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:01:21 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:01:21 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:01:32 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:01:32 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:03:01 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:03:01 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:07:25 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:07:25 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 17:58:44 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Ceci est habituellement une erreur temporaire qui se produit durant la résolution du nom d’hôte et qui signifie que le serveur local n’a pas reçu de réponse d’un serveur faisant autorité. 
+[06-Feb-2026 17:58:44 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Ceci est habituellement une erreur temporaire qui se produit durant la résolution du nom d’hôte et qui signifie que le serveur local n’a pas reçu de réponse d’un serveur faisant autorité. 
+[06-Feb-2026 17:58:44 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\admin\dashboard.php(21): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 17:58:44 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 17:58:44 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 17:58:44 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\admin\dashboard.php(21): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 18:04:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:04:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:04:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:04:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:04:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:06:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:06:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:06:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:23:10 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\middleware\AuthMiddleware.php on line 17
+[06-Feb-2026 18:25:48 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:25:48 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:30:27 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:30:27 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:57:35 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:57:35 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:13:14 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 19:13:14 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 19:13:14 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: Hôte inconnu. 
+[06-Feb-2026 19:13:14 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\admin\users.php(18): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 19:13:14 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\admin\dashboard.php(21): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 19:14:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 19:14:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 18:43:24 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 18:43:24 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 18:43:24 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(28): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 18:43:37 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 18:43:37 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 18:43:37 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(28): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 18:51:54 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:51:54 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:53:10 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 18:53:10 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:10:28 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:10:28 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:10:42 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:10:42 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:11:25 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:11:25 UTC] PHP Parse error:  syntax error, unexpected variable "$stmt", expecting "function" or "const" in C:\xampp\htdocs\backend\backend\models\Category.php on line 121
+[06-Feb-2026 19:18:49 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 19:18:49 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 19:18:49 UTC] Database Connection Error: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for hopper.proxy.rlwy.net failed: No such host is known. 
+[06-Feb-2026 19:18:49 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(28): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 19:18:49 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\buy_coins.php(36): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 19:19:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:43:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:43:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:43:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:44:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:44:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:44:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:52:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:52:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:52:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:52:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:52:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 20:52:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:24:19 UTC] Database Connection Error: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[06-Feb-2026 21:24:19 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\messages.php(21): Database->getConnection()
+#1 C:\xampp\htdocs\backend\backend\index.php(78): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[06-Feb-2026 21:30:32 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\backend\backend\config\database.php on line 71
+[06-Feb-2026 21:30:32 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\backend\backend\config\database.php on line 71
+[06-Feb-2026 21:54:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:54:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:54:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:54:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:54:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:54:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php:56
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\amanda\wallet.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\api\amanda\wallet.php on line 56
+[06-Feb-2026 21:57:18 UTC] Database Connection Error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[06-Feb-2026 21:57:18 UTC] PHP Fatal error:  Uncaught Exception: Database connection failed: Remote in C:\xampp\htdocs\backend\backend\config\database.php:74
+Stack trace:
+#0 C:\xampp\htdocs\backend\backend\api\admin\categories.php(18): Database->getConnection()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend\backend\config\database.php on line 74
+[07-Feb-2026 01:18:30 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\chikour\backend\utils\JWT.php on line 38
+[07-Feb-2026 01:18:30 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\chikour\backend\utils\JWT.php on line 38
+[07-Feb-2026 02:16:44 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17
+[07-Feb-2026 02:16:48 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17
+[07-Feb-2026 02:16:53 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17
+[07-Feb-2026 02:16:53 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17
+[07-Feb-2026 02:16:55 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17
+[07-Feb-2026 02:36:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\chikour\backend\api\amanda\dashboard.php:39
+Stack trace:
+#0 C:\xampp\htdocs\chikour\backend\api\amanda\dashboard.php(39): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\chikour\backend\router.php(17): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\chikour\backend\api\amanda\dashboard.php on line 39
+[07-Feb-2026 02:37:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\xampp\htdocs\chikour\backend\api\amanda\dashboard.php:39
+Stack trace:
+#0 C:\xampp\htdocs\chikour\backend\api\amanda\dashboard.php(39): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\chikour\backend\router.php(17): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\chikour\backend\api\amanda\dashboard.php on line 39
+[07-Feb-2026 02:41:16 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17
+[07-Feb-2026 02:41:21 UTC] PHP Parse error:  syntax error, unexpected token "@", expecting "function" or "const" in C:\xampp\htdocs\chikour\backend\middleware\AuthMiddleware.php on line 17

@@ -16,7 +16,7 @@
  */
 
 class Database {
-    private $mode = 'hosting'; // 'local', 'remote', or 'hosting'
+    private $mode = 'remote'; // 'local', 'remote', or 'hosting'
     
     // =====================================================
     // REMOTE DATABASE CREDENTIALS (e.g. Railway)

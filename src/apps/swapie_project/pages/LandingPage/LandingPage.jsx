@@ -4,7 +4,7 @@ import "./LandingPage.css";
 import Footer from "@/apps/webbis/pages/footer";
 
 import Logo from "../../assets/images/logolight.svg";
-import SwapieText from "../../assets/images/swapie.svg";
+import SwapieText from "../../assets/images/Swapie.svg";
 import SwapieHapie from "../../assets/images/swapiehapie.svg";
 import SwapieLightText from "../../assets/images/swapie_text.svg";
 import service from "../../assets/images/Service.svg";

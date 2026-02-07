@@ -1,0 +1,301 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  background-color: #eef2ff;
+}
+
+input,
+select {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: light;
+  color: #1c3f3a;
+}
+
+.SignUpPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #eef2ff;
+}
+
+.userInfos {
+  flex: 3 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  background-color: #eef2ff;
+  padding: 10px 10px 30px 10px;
+  color: #1c3f3a;
+
+  font-family: "Times New Roman", Times, serif;
+  font-weight: light;
+}
+
+.UpperText {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.p1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.p2 {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tf {
+  width: 100%;
+  max-width: 500px;
+  min-width: 150px;
+}
+
+.inputHolder {
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid lightgray;
+  font-size: 14px;
+  color: black;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.inputHolder::placeholder {
+  color: #585757;
+  font-size: 14px;
+  padding-left: 7px;
+}
+
+.inputs p {
+  margin: 0 0 3px 0;
+  font-weight: bold;
+}
+
+.usrname,
+.skill {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.confirmPass,
+.setPass,
+.setMail {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.createAccount {
+  background: linear-gradient(to bottom right, #1c3f3a, #cccccc);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 150px;
+  height: 40px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+.createAccount:hover {
+  transform: scale(1.05);
+}
+
+.informations {
+  flex: 4 1 200px;
+  min-width: 150px;
+  background-color: #1c3f3a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  flex: 3 1 300px;
+  width: 74%;
+}
+
+.welcomeBonusHeader {
+  background-color: #3e5c57;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 5px 15px;
+  color: white;
+  margin-left: 5px;
+}
+
+.coinCard {
+  background-color: #3e5c57;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 12px 25px;
+  color: white;
+  width: 75%;
+  margin-left: 10px;
+  border-color: #5b7571;
+  border-style: solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.features tr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.features td {
+  padding: 0;
+  margin-bottom: 16px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.features td:first-child {
+  width: 30px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxImg {
+  width: 30px;
+  height: auto;
+  display: block;
+}
+
+.features p {
+  margin: 0;
+  font-size: 16px;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center; 
+  min-height: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: light;
+  color: #ffffff;
+}
+
+.informations p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: light;
+  color: #ffffff;
+}
+
+.welcomeSubtitle,
+.welcomeTitle {
+  margin-bottom: 35px;
+}
+
+.starsImg {
+  width: 50px;
+  height: auto;
+}
+.coinCardTop {
+  display: flex;
+  align-items: center;
+}
+.coinAmount {
+  margin-top: 17px;
+  margin-bottom: 5px;
+}
+.startExploring {
+  margin-top: 0;
+}
+
+.startExploring,
+.coinDescription {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signInBtn {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  color: #1c3f3a;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+input{
+  padding-left: 12px;
+}
+@media (max-width: 900px) {
+  .SignUpPage {
+    flex-direction: column; 
+  }
+  .userInfos {
+    width: 100%;
+    flex: none;
+    order: 2;
+  }
+  .informations {
+    width: 100%;
+    flex: none;
+    order: 1;
+  }
+  .tf {
+    width: 90%;
+  }
+  .createAccount {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tf {
+    width: 60%;
+  }
+  .createAccount {
+    max-width: 60%;
+  }
+}
+.logo {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .tf {
+    width: 70%;
+  }
+  .createAccount {
+    max-width: 70%;
+  }
+}

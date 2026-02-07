@@ -1,0 +1,162 @@
+.report {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fefefc;
+  border-radius: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 980px;
+  height: 68px;
+  margin: 10px auto;
+  font-family: "Labrada", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: 600;
+  color: #1c3f3a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.date {
+  color: #718ebf;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  color: gold;
+  flex-shrink: 0;
+}
+
+.rating {
+  margin-left: 8px;
+  font-weight: 600;
+  color: #1c3f3a;
+  white-space: nowrap;
+}
+
+.report-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 16px;
+  transition: transform 0.18s ease, color 0.18s ease;
+}
+
+.report-icon:hover {
+  color: #c0392b;
+  transform: scale(1.08);
+}
+
+@media (max-width: 900px) {
+  .report {
+    padding: 10px 16px;
+    height: 64px;
+  }
+  .right { gap: 24px; }
+  .rating { margin-left: 6px; }
+}
+
+@media (max-width: 600px) {
+  .report {
+    padding: 12px 14px;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .left {
+    gap: 12px;
+  }
+
+  .username {
+    font-size: 15px;
+  }
+
+  .right {
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .stars {
+    gap: 6px;
+  }
+
+  .report-icon {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .report {
+    padding: 10px 12px;
+    border-radius: 18px;
+  }
+
+  .profile {
+    width: 36px;
+    height: 36px;
+  }
+
+  .username {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .star {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rating {
+    font-size: 13px;
+  }
+}

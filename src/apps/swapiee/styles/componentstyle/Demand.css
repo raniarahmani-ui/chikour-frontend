@@ -1,0 +1,225 @@
+.demand-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e5e9;
+  max-width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.demand-category {
+  background: #f0f7ff;
+  color: #1c3f3a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.demand-client {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.client-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e1e5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #6b7280;
+}
+
+.client-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.demand-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.demand-description {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.demand-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.demand-points {
+  background: #f8f9fa;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #e5e7eb;
+}
+
+.demand-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+}
+
+.action-btn:hover {
+  background: #f9fafb;
+}
+
+.view-btn {
+  color: #374151;
+  flex: 1;
+}
+
+.edit-btn {
+  color: #374151;
+  flex: 1;
+}
+
+.delete-btn {
+  color: #dc2626;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+.action-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 600px) {
+
+  .demand-card {
+    padding: 16px;
+    max-width: 100%;            
+  }
+
+  .demand-category {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin-bottom: 12px;
+  }
+
+  .demand-client {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .client-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .client-name {
+    font-size: 13px;
+  }
+
+  .demand-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .demand-description {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .demand-footer {
+    margin-bottom: 14px;
+  }
+
+  .demand-points {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .demand-actions {
+    gap: 6px;
+  }
+
+  .action-btn {
+    padding: 7px 12px;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .action-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .demand-card {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .demand-category {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .client-avatar {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .demand-title {
+    font-size: 15px;
+  }
+
+  .demand-description {
+    font-size: 12px;
+  }
+
+  .action-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .action-icon {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,287 @@
+.buycoins-container {
+  display: flex;
+  min-height: 100vh;
+  background: #e0e7ff;
+  font-family: "Inter", sans-serif;
+}
+
+.buycoins-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 30px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  overflow-y: auto;
+}
+
+.buycoins-content.sidebar-hidden {
+  margin-left: 0;
+}
+
+.buycoins-content.mobile {
+  margin-left: 70px;
+}
+
+.buycoins-content.mobile.sidebar-hidden {
+  margin-left: 0;
+}
+
+.buycoins-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  box-shadow: 
+    0 8px 32px rgba(28, 63, 58, 0.1),
+    0 2px 8px rgba(28, 63, 58, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.sidebar-toggle {
+  background: linear-gradient(135deg, #1C3F3A, #2a5c55);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(28, 63, 58, 0.3);
+}
+
+.sidebar-toggle:hover {
+  background: linear-gradient(135deg, #2a5c55, #1C3F3A);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(28, 63, 58, 0.4);
+}
+
+.sidebar-toggle:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.buycoins-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.wallet-container {
+  margin: 0;
+}
+
+.offers-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  text-align: center;
+}
+
+.coins-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.threecoins,
+.bag,
+.twocoins {
+  height: 140px;
+  width: 140px;
+  box-sizing: border-box;
+}
+
+.coin {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .coins-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .buycoins-content {
+    padding: 28px;
+  }
+  
+  .coins-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .coins-container {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buycoins-content {
+    margin-left: 70px;
+    padding: 20px;
+  }
+  
+  .buycoins-content.mobile {
+    margin-left: 70px;
+  }
+  
+  .buycoins-content.sidebar-hidden,
+  .buycoins-content.mobile.sidebar-hidden {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .buycoins-navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .nav-left {
+    flex: none;
+    justify-content: flex-start;
+  }
+  
+  .coins-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  .threecoins,
+  .bag,
+  .twocoins {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .buycoins-content {
+    margin-left: 60px;
+    padding: 16px;
+  }
+  
+  .buycoins-content.mobile {
+    margin-left: 60px;
+  }
+  
+  .buycoins-content.sidebar-hidden,
+  .buycoins-content.mobile.sidebar-hidden {
+    margin-left: 0;
+    padding: 16px;
+  }
+  
+  .page-title {
+    font-size: 22px;
+  }
+  
+  .offers-title {
+    font-size: 20px;
+  }
+  
+  .coins-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .threecoins,
+  .bag,
+  .twocoins {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .buycoins-content {
+    padding: 12px;
+  }
+  
+  .buycoins-navbar {
+    padding: 12px;
+  }
+  
+  .nav-left {
+    gap: 10px;
+  }
+  
+  .sidebar-toggle {
+    padding: 10px;
+  }
+  
+  .page-title {
+    font-size: 20px;
+  }
+  
+  .offers-title {
+    font-size: 18px;
+  }
+  
+  .coins-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .buycoins-content {
+    padding: 10px;
+  }
+  
+  .buycoins-navbar {
+    padding: 10px;
+  }
+  
+  .coins-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .threecoins,
+  .bag,
+  .twocoins {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.buycoins-container, .buycoins-content, .coins-container {
+  overflow-x: hidden;
+}

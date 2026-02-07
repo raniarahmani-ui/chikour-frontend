@@ -1,0 +1,706 @@
+.wb-create-service-container {
+  padding: 30px;
+  background-color: #f5f1ed;
+  width: 100%;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wb-create-service-header {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wb-create-service-title {
+  font-family: labrada;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d3436;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.wb-create-service-description {
+  font-family: labrada;
+  font-size: 16px;
+  color: #95938e;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.wb-cs-divider {
+  height: 1px;
+  background-color: #c7d2fe;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.wb-create-service-form {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wb-service-form-card {
+  background-color: white;
+  border-radius: 12px;
+  border: 2px solid #c7d2fe;
+  padding: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.wb-cs-form-section {
+  margin-bottom: 25px;
+}
+
+.wb-cs-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.wb-cs-form-label {
+  display: block;
+  font-family: labrada;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 8px;
+}
+
+.wb-cs-form-input,
+.wb-cs-form-select,
+.wb-cs-form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #c7d2fe;
+  border-radius: 8px;
+  font-family: labrada;
+  font-size: 14px;
+  background-color: #F5F3EC;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.wb-cs-form-input:focus,
+.wb-cs-form-select:focus,
+.wb-cs-form-textarea:focus {
+  outline: none;
+  border-color: #1C3F3A;
+  background-color: white;
+}
+
+.wb-cs-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.wb-cs-price-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.wb-cs-currency-symbol {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: labrada;
+  font-size: 14px;
+  color: #2d3436;
+  z-index: 1;
+}
+
+.wb-cs-price-input {
+  padding-left: 30px;
+}
+
+.wb-cs-skills-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.wb-cs-skills-input {
+  flex: 1;
+}
+
+.wb-cs-skills-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wb-cs-skills-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid #c7d2fe;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wb-cs-skill-suggestion-item {
+  padding: 10px 16px;
+  font-family: labrada;
+  font-size: 14px;
+  color: #2d3436;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.wb-cs-skill-suggestion-item:hover {
+  background-color: #f3f4f6;
+}
+
+.wb-cs-skill-suggestion-item:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.wb-cs-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wb-cs-skill-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1C3F3A;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: labrada;
+  font-size: 12px;
+  font-weight: 500;
+  gap: 6px;
+}
+
+.wb-cs-remove-skill-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.wb-cs-remove-skill-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wb-cs-popular-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.wb-cs-popular-label {
+  font-family: labrada;
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.wb-cs-quick-add-skill {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-family: labrada;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wb-cs-quick-add-skill:hover {
+  background-color: #1C3F3A;
+  color: white;
+  border-color: #1C3F3A;
+}
+
+.wb-cs-upload-description {
+  font-family: labrada;
+  font-size: 13px;
+  color: #95938e;
+  margin: 4px 0 12px 0;
+}
+
+.wb-cs-file-upload-area {
+  border: 2px dashed #c7d2fe;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #faf9f7;
+}
+
+.wb-cs-file-upload-area:hover {
+  border-color: #1C3F3A;
+  background-color: #f5f1ed;
+}
+
+.wb-cs-file-input {
+  display: none;
+}
+
+.wb-cs-file-upload-label {
+  cursor: pointer;
+  display: block;
+}
+
+.wb-cs-upload-content svg {
+  color: #1C3F3A;
+  margin-bottom: 12px;
+}
+
+.wb-cs-upload-content p {
+  font-family: labrada;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3436;
+  margin: 0 0 4px 0;
+}
+
+.wb-cs-upload-content span {
+  font-family: labrada;
+  font-size: 12px;
+  color: #95938e;
+}
+
+.wb-cs-files-preview-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.wb-cs-file-preview {
+  padding: 10px 12px;
+  background-color: white;
+  border: 1px solid #c7d2fe;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wb-cs-file-preview span {
+  font-family: labrada;
+  font-size: 14px;
+  color: #2d3436;
+}
+
+.wb-cs-file-preview-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 40px);
+}
+
+.wb-cs-file-size {
+  color: #95938e;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+.wb-cs-remove-file-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-family: labrada;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.wb-cs-remove-file-btn:hover {
+  color: #c0392b;
+}
+
+.wb-cs-form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.wb-cs-cancel-btn {
+  background-color: white;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: labrada;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wb-cs-cancel-btn:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.wb-cs-save-draft-btn {
+  background-color: white;
+  color: #2d3436;
+  border: 2px solid #1C3F3A;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: labrada;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wb-cs-save-draft-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.wb-cs-publish-container {
+  display: flex;
+  gap: 12px;
+}
+
+.wb-cs-publish-btn {
+  background-color: #1C3F3A;
+  color: white;
+  border: 2px solid #1C3F3A;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-family: labrada;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wb-cs-publish-btn:hover {
+  background-color: #15302b;
+  border-color: #15302b;
+}
+
+.wb-cs-publish-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wb-cs-tips-section {
+  margin-top: 40px;
+  padding: 24px;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  border: 1px solid #d4e6ff;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wb-cs-tips-title {
+  font-family: labrada;
+  font-size: 18px;
+  font-weight: 600;
+  color: #173083;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.wb-cs-tips-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #1e40af;
+  text-align: left;
+}
+
+.wb-cs-tips-list li {
+  font-family: labrada;
+  font-size: 14px;
+  color: #1e40af;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.wb-cs-tips-list li::marker {
+  color: #234cd2;
+}
+
+.wb-cs-view-drafts-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 2px solid #d1d5db;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: labrada;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+.wb-cs-view-drafts-btn:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.wb-cs-drafts-panel {
+  background-color: white;
+  border: 2px solid #c7d2fe;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.wb-cs-drafts-panel h3 {
+  font-family: labrada;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3436;
+  margin: 0 0 15px 0;
+}
+
+.wb-cs-drafts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wb-cs-draft-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.wb-cs-draft-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wb-cs-draft-info strong {
+  font-family: labrada;
+  font-size: 14px;
+  color: #2d3436;
+}
+
+.wb-cs-draft-date {
+  font-family: labrada;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.wb-cs-draft-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.wb-cs-load-draft-btn {
+  background-color: #1C3F3A;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: labrada;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wb-cs-load-draft-btn:hover {
+  background-color: #15302b;
+}
+
+.wb-cs-delete-draft-btn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: labrada;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wb-cs-delete-draft-btn:hover {
+  background-color: #fecaca;
+}
+
+.wb-cs-success-message {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #a7f3d0;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  font-family: labrada;
+  font-weight: 500;
+}
+
+.wb-cs-form-error-banner {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #fecaca;
+  max-width: 800px;
+  width: 100%;
+}
+
+.wb-cs-input-error {
+  border-color: #dc2626 !important;
+  background-color: #fef2f2 !important;
+}
+
+.wb-cs-input-error:focus {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1) !important;
+}
+
+.wb-cs-upload-error {
+  border-color: #dc2626 !important;
+  background-color: #fef2f2 !important;
+}
+
+.wb-cs-error-text {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.wb-cs-char-count {
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+  text-align: right;
+}
+
+.wb-cs-price-suggestion {
+  font-family: labrada;
+  font-size: 12px;
+  color: #95938e;
+  margin: 8px 0 0 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .wb-create-service-container {
+    padding: 20px 15px !important;
+    margin-left: 70px;
+    width: calc(100% - 70px);
+  }
+
+  .wb-cs-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .wb-service-form-card {
+    padding: 30px 20px;
+  }
+
+  .wb-cs-form-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .wb-cs-save-draft-btn,
+  .wb-cs-publish-btn,
+  .wb-cs-cancel-btn {
+    width: 100%;
+  }
+
+  .wb-cs-skills-input-container {
+    flex-direction: column;
+  }
+
+  .wb-cs-draft-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .wb-cs-draft-actions {
+    width: 100%;
+  }
+
+  .wb-cs-load-draft-btn,
+  .wb-cs-delete-draft-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .wb-cs-popular-skills {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .wb-create-service-container {
+    padding: 15px 12px !important;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .wb-create-service-title {
+    font-size: 24px;
+  }
+
+  .wb-service-form-card {
+    padding: 20px 15px;
+  }
+}

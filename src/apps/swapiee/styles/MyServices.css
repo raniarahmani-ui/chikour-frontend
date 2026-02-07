@@ -1,0 +1,122 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #e0e7ff;
+  padding: 20px;
+  overflow-y: auto;
+  font-family: "Labrada", sans-serif;
+  box-sizing: border-box;
+}
+
+.page-title {
+  color: #1c3f3a;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #718ebf;
+  transition: 0.2s;
+}
+
+.tabs button.active {
+  color: #1c3f3a;
+  border-bottom: 2px solid #1c3f3a;
+}
+
+.ratings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1c3f3a;
+}
+
+.Services-list {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button {
+  margin: 15px 30px;
+}
+
+@media (max-width: 900px) {
+  .Services-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-content {
+    padding: 18px;
+  }
+
+  .Services-list {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 14px;
+  }
+
+  .tabs {
+    gap: 10px;
+  }
+
+  .tabs button {
+    font-size: 14px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+}

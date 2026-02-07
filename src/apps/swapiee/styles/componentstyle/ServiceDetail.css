@@ -1,0 +1,231 @@
+.Service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  font-family: "Labrada", sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: 20px;
+  width: 100%;
+  max-width: 980px;
+  min-height: 160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #eaf4f3, #fee2e2);
+  box-sizing: border-box;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.desc {
+  flex: 1 1 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.tag-duration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #eaf4f3;
+  color: #1c3f3a;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.duration {
+  color: #999;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin: 5px 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  min-width: 140px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  color: gold;
+  flex-shrink: 0;
+}
+
+.points {
+  font-weight: 600;
+  color: #1c3f3a;
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  color: #1c3f3a;
+  border: 1px solid rgba(28, 63, 58, 0.2);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+  height: 32px;
+  transition: background 0.2s ease, transform 0.12s ease;
+  box-sizing: border-box;
+}
+
+.edit:hover {
+  background: #eaf4f3;
+  transform: translateY(-2px);
+}
+
+.edit-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.delete {
+  background: #fee2e2;
+  color: #b91c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  height: 32px;
+  width: 50px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.12s ease;
+  box-sizing: border-box;
+}
+
+.delete:hover {
+  background: #fca5a5;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .image { width: 180px; height: 140px; }
+  .desc { flex: 1 1 360px; }
+  .card-right { min-width: 120px; }
+  .title { font-size: 15px; }
+}
+
+@media (max-width: 768px) {
+  .Service {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 16px;
+    min-height: auto;
+  }
+  .image {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+  }
+  .desc { order: 2; }
+  .card-right {
+    order: 3;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+    min-width: 0;
+  }
+  .actions { justify-content: flex-end; }
+  .title { white-space: normal; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; }
+  .info { -webkit-line-clamp: 4; }
+}
+
+@media (max-width: 480px) {
+  .image { height: 160px; }
+  .desc { padding: 2px 0; }
+  .tag { font-size: 11px; padding: 3px 8px; }
+  .duration { font-size: 11px; }
+  .card-right { flex-direction: column; align-items: stretch; gap: 8px; }
+  .edit, .delete { width: 100%; height: 40px; justify-content: center; }
+  .actions { flex-direction: column-reverse; gap: 8px; }
+  .points { font-size: 12px; }
+}

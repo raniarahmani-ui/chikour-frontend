@@ -1,0 +1,534 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.transactions-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.transactions-content {
+  flex: 1;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  padding: 30px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.transactions-content.sidebar-hidden {
+  margin-left: 0;
+  width: 100%;
+}
+
+.transactions-content.mobile {
+  margin-left: 70px;
+}
+
+.transactions-content.mobile.sidebar-hidden {
+  margin-left: 0;
+}
+
+.transactions-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.sidebar-toggle {
+  background: #1C3F3A;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 2px 8px rgba(28, 63, 58, 0.3);
+}
+
+.sidebar-toggle:hover {
+  background: #2a5c55;
+  transform: scale(1.05);
+}
+
+.transactions-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0;
+}
+
+.TitlePic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cardTitle,
+.cardSub {
+  width: 60%;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+.cardValue {
+  font-size: 26px;
+  color: #1c3f3aaf;
+  margin-bottom: 15px;
+}
+
+.user-stats-section {
+  background: white;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+}
+
+.user-stats-cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.user-stat-card {
+  flex: 1;
+  min-width: 150px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+  border-radius: 10px;
+  padding: 16px 18px;
+  border: 1px solid #c8e6c9;
+}
+
+.user-stat-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.user-stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c3f3a;
+}
+
+.user-stat-value .stat-unit {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.chartBox {
+  flex: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  min-height: 280px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.chartTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-bottom: 15px;
+}
+
+.chart-area {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bar-chart-container {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-chart-bars {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.bar-chart-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 0;
+}
+
+.bar-pair {
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
+  height: 140px;
+  width: 100%;
+  justify-content: center;
+}
+
+.bar {
+  width: 5px;
+  min-height: 2px;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.5s ease;
+}
+
+.bar-reg {
+  background: #5D7872;
+}
+
+.bar-purch {
+  background: #16A34A;
+}
+
+.bar-label {
+  font-size: 9px;
+  color: #888;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.horizontal-bar-chart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 5px;
+}
+
+.h-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.h-bar-label {
+  width: 90px;
+  font-size: 12px;
+  color: #555;
+  text-align: right;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.h-bar-track {
+  flex: 1;
+  height: 18px;
+  background: #f0f0f0;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.h-bar-fill {
+  height: 100%;
+  border-radius: 9px;
+  transition: width 0.5s ease;
+  min-width: 4px;
+}
+
+.h-bar-value {
+  width: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0;
+}
+
+.actionCard {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.statusList,
+.interventionList {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.statusItem,
+.interventionItem {
+  height: 55px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.interventionDescdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.statusList > :first-child,
+.statusList > :last-child {
+  background-color: #f0fdf4;
+}
+
+.statusList > :nth-child(2) {
+  background-color: #fff7ed;
+}
+
+.statusList > :nth-child(3) {
+  background-color: #eff6ff;
+}
+
+.purchaseList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.purchaseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #f9fafb;
+  border-radius: 16px;
+  padding: 0 10px;
+}
+
+.purchaseName {
+  font-size: 16px;
+}
+
+.purchaseDate {
+  font-size: 14px;
+  color: #6a7282;
+}
+
+.EmojiInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.purchaseInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.coinAmount {
+  background-color: #5d7872;
+  border-radius: 8px;
+  padding: 3px 8px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.interventionList > :nth-child(2),
+.interventionList > :nth-child(4) {
+  background-color: #fff7ed;
+}
+
+.interventionList > :first-child {
+  background-color: #fef2f2;
+}
+
+.interventionList > :nth-child(3) {
+  background-color: #f0fdf4;
+}
+
+.interventionTitle {
+  font-size: 14px;
+  color: #1c3f3a;
+}
+
+.interventionDesc {
+  font-size: 12px;
+  color: #7b8b8a;
+  line-height: 1.4;
+}
+
+.interventionItem,
+.statusItem,
+.purchaseItem {
+  min-width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px 5px #0000002b;
+}
+
+@media (max-width: 1200px) {
+  .actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .summary {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .transactions-content {
+    margin-left: 70px;
+    padding: 20px;
+  }
+  
+  .transactions-content.mobile {
+    margin-left: 70px;
+  }
+  
+  .transactions-content.sidebar-hidden,
+  .transactions-content.mobile.sidebar-hidden {
+    margin-left: 0;
+  }
+  
+  .transactions-navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .nav-left {
+    flex: none;
+    justify-content: flex-start;
+  }
+  
+  .summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats {
+    flex-direction: column;
+  }
+  
+  .actions {
+    grid-template-columns: 1fr;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media (max-width: 480px) {
+  .transactions-content {
+    margin-left: 60px;
+    padding: 15px;
+  }
+  
+  .chartBox,
+  .actionCard {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,332 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.signin-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 40% ;
+    background:linear-gradient(45deg, #1C3F3A ,#206d62);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 10px;
+}
+.logoname {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px; 
+}
+
+.left-side img.Logo {
+    width: 60px;
+    height:60px;
+    margin-bottom: 0px;
+
+}
+
+.left-side img.SwapieText{
+    width:107px;
+    height:40px;
+}
+
+.left-side img.SwapieHapie {
+    width: 298px;
+    height: 215px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.left-side img.SwapieHapie {
+    width: 298px;
+    height: 215px;
+}
+.left-side p {
+    font-style: italic;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+.Logo {
+  transition: transform 0.3s ease;
+}
+
+.Logo:hover {
+  transform: translateY(-5px);
+}
+
+.exch{
+  font-family: "Times New Roman","Georgia", serif;
+  transition: transform 0.3s ease;
+}
+
+.exch:hover {
+  transform: translateY(-5px);
+}
+
+.right-side {
+    width: 60%;
+    background: linear-gradient(135deg, #eef2ff, #dde3ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.signin-form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-form h2 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #1b332f;
+    font-family: "Times New Roman","Georgia", serif;
+}
+
+.subtitle {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 30px;
+    font-family: "Times New Roman","Georgia", serif;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.Email-User,
+.Password {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #d6d6d6;
+    background: white;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    display: block;
+}
+
+.Email-User:focus,
+.Password:focus {
+    border-color: #1a4b4b;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width:100%
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #1a4b4b;
+    user-select: none;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.submit {
+    margin-top: 25px;
+    padding: 12px;
+    background: linear-gradient(to bottom, #1A4B4B, #1C3F3A);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.submit:hover:not(:disabled) {
+    background: linear-gradient(to bottom, #1F5656, #214A44);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit:active:not(:disabled) {
+    background: linear-gradient(to bottom, #163c3c, #183330);
+    opacity: 0.8;
+    transform: translateY(0); 
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #1a4b4b;
+    font-weight: 600;
+    margin-left: 6px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 14px;
+}
+
+.link-button:hover {
+    color: #173c3c;
+}
+
+.noaccount {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.noaccount a {
+    font-weight: bold;
+    color: #1a4b4b;
+    margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+    .left-side {
+        width: 35%;
+        padding: 30px;
+    }
+    
+    .right-side {
+        width: 65%;
+        padding: 40px;
+    }
+    
+    .left-side img.SwapieHapie {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .left-side {
+        width: 100%;
+        padding: 30px 20px;
+        order: 1;
+    }
+    
+    .right-side {
+        width: 100%;
+        padding: 40px 20px;
+        min-height: auto;
+        justify-content:center;
+        padding-top: 40px;
+        order: 2;
+    }
+    
+    .left-side img.SwapieHapie {
+        width: 180px;
+        height: 130px;
+    }
+    
+    .signin-form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-side {
+        padding: 30px 15px;
+        padding-top: 40px;
+    }
+    
+    .signin-form h2 {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+    }
+    
+    .Email-User,
+    .Password {
+        padding: 10px 12px;
+        font-size: 16px; 
+    }
+    
+    .submit {
+        padding: 14px; 
+        font-size: 16px;
+    }
+    
+    .logoname {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .left-side {
+        display: flex;
+        padding: 20px;
+    }
+    
+    .left-side img.SwapieHapie {
+        width: 180px;
+        height: 130px;
+    }
+    
+    .left-side p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .signin-form {
+        width: 400px;
+    }
+    
+    .left-side img.SwapieHapie {
+        width: 350px;
+        height: 250px;
+    }
+}

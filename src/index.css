@@ -1,0 +1,260 @@
+:root {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafc;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  --sidebar-w: 280px;
+  --sidebar-w-compact: 70px;
+  --sidebar-w-compact-sm: 60px;
+  --sidebar-w-compact-xs: 55px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: inherit;
+  background-color: #f8fafc;
+  color: inherit;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.manage-reports-content,
+.transactions-content,
+.demands-content,
+.buycoins-content,
+.user-management-content,
+.service-management-content,
+.profile-content,
+.categories-content {
+  width: calc(100% - var(--sidebar-w));
+  max-width: calc(100% - var(--sidebar-w));
+  min-width: 0;
+}
+
+.manage-reports-content.sidebar-hidden,
+.transactions-content.sidebar-hidden,
+.demands-content.sidebar-hidden,
+.buycoins-content.sidebar-hidden,
+.user-management-content.sidebar-hidden,
+.service-management-content.sidebar-hidden,
+.profile-content.sidebar-hidden,
+.categories-content.sidebar-hidden {
+  width: 100%;
+  max-width: 100%;
+}
+
+.manage-reports-content.mobile,
+.transactions-content.mobile,
+.demands-content.mobile,
+.buycoins-content.mobile,
+.user-management-content.mobile,
+.service-management-content.mobile,
+.profile-content.mobile,
+.categories-content.mobile {
+  width: calc(100% - var(--sidebar-w-compact));
+  max-width: calc(100% - var(--sidebar-w-compact));
+}
+
+.manage-reports-content.mobile.sidebar-hidden,
+.transactions-content.mobile.sidebar-hidden,
+.demands-content.mobile.sidebar-hidden,
+.buycoins-content.mobile.sidebar-hidden,
+.user-management-content.mobile.sidebar-hidden,
+.service-management-content.mobile.sidebar-hidden,
+.profile-content.mobile.sidebar-hidden,
+.categories-content.mobile.sidebar-hidden {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-w: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --sidebar-w-compact: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --sidebar-w-compact: 55px;
+  }
+}
+
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body,
+html.dark-mode #root {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+html.dark-mode .settings-container,
+html.dark-mode .settings-content,
+html.dark-mode .manage-reports-container,
+html.dark-mode .manage-reports-content,
+html.dark-mode .user-management-container,
+html.dark-mode .user-management-content,
+html.dark-mode .service-management-container,
+html.dark-mode .service-management-content,
+html.dark-mode .transactions-container,
+html.dark-mode .categories-container {
+  background: #1a1a2e;
+}
+
+html.dark-mode .settings-navbar,
+html.dark-mode .reports-navbar,
+html.dark-mode .user-management-navbar,
+html.dark-mode .service-management-navbar {
+  background: rgba(30, 30, 50, 0.95);
+  border-color: #2a2a4a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .settings-title,
+html.dark-mode .userManagementTitle,
+html.dark-mode h1, html.dark-mode h2, html.dark-mode h3 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .settings-subtitle,
+html.dark-mode .item-description,
+html.dark-mode .userCount,
+html.dark-mode .section-title {
+  color: #8888aa;
+}
+
+html.dark-mode .settings-item,
+html.dark-mode .stat-card,
+html.dark-mode .userCard,
+html.dark-mode .service-card {
+  background-color: #16213e;
+  border-color: #2a2a4a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .settings-item:hover,
+html.dark-mode .stat-card:hover,
+html.dark-mode .userCard:hover,
+html.dark-mode .service-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+html.dark-mode .item-label,
+html.dark-mode .stat-description,
+html.dark-mode .stat-number,
+html.dark-mode .userName {
+  color: #e0e0e0;
+}
+
+html.dark-mode .ProfileCard,
+html.dark-mode .ServiceCard,
+html.dark-mode .StatBox {
+  background-color: #16213e;
+  border-color: #2a2a4a;
+}
+
+html.dark-mode .content,
+html.dark-mode .reports-grid,
+html.dark-mode .reports-section {
+  background: transparent;
+}
+
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  background-color: #16213e;
+  border-color: #2a2a4a;
+  color: #e0e0e0;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: #6b6b8a;
+}
+
+html.dark-mode .search-input {
+  background-color: #16213e;
+  border-color: #2a2a4a;
+  color: #e0e0e0;
+}
+
+html.dark-mode .tabButton,
+html.dark-mode .tab,
+html.dark-mode .status-tab {
+  color: #aaa;
+  background: transparent;
+}
+
+html.dark-mode .tabButton.active,
+html.dark-mode .tab.activeTab,
+html.dark-mode .active-status-tab {
+  color: #e0e0e0;
+  border-color: #0f3460;
+}
+
+html.dark-mode .EditProfileModal {
+  background: #16213e;
+  color: #e0e0e0;
+}
+
+html.dark-mode .formGroup label {
+  color: #c0c0d0;
+}
+
+html.dark-mode .formGroup input,
+html.dark-mode .formGroup textarea {
+  background: #1a1a2e;
+  border-color: #2a2a4a;
+  color: #e0e0e0;
+}
+
+html.dark-mode .cancelBtn {
+  background: #2a2a4a;
+  border-color: #3a3a5a;
+  color: #e0e0e0;
+}
+
+html.dark-mode .popup-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+html.dark-mode .popup-content {
+  background: #16213e;
+  color: #e0e0e0;
+}
+
+html.dark-mode .userEmail {
+  color: #8888aa;
+}
+
+html.dark-mode .service-description-text {
+  color: #aaa;
+}
+
+html.dark-mode .ModalOverlay {
+  background: rgba(0, 0, 0, 0.85);
+}

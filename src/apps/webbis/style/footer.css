@@ -1,0 +1,216 @@
+.footer {
+  z-index: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2ff;
+  color: #1c3f3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 0;
+  gap: 40px;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.main > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+h2 {
+  color: #1c3f3a;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #3a524f;
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+hr {
+  width: 80%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.DevTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+
+.TwoEmails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.TwoEmails div {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.copyright {
+  color: #3a524f;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popupContent {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  z-index: 10000;
+}
+
+.popupClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1c3f3a;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+}
+
+.popupClose:hover {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.popupText p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #3a524f;
+}
+
+.popupContent h3 {
+  color: #1c3f3a;
+  margin-bottom: 15px;
+  padding-right: 30px;
+}
+
+.popupButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.backButton {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.sendButton {
+  padding: 10px 20px;
+  background-color: #1c3f3a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.backButton:hover,
+.sendButton:hover {
+  opacity: 0.9;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1c3f3a;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .TwoEmails {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .popupContent {
+    padding-right: 50px;
+  }
+  .popupClose {
+    margin-right: 30px;
+  }
+}

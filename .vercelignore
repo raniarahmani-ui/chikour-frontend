@@ -1,0 +1,6 @@
+# Ignore frontend source and modules for the serverless function packaging
+node_modules
+frontend/node_modules
+frontend/src
+.git
+.agent

@@ -21,11 +21,11 @@ class Database {
     // =====================================================
     // REMOTE DATABASE CREDENTIALS (e.g. Railway)
     // ===================================
-    private $remoteHost = "hopper.proxy.rlwy.net";
+    private $remoteHost = "shortline.proxy.rlwy.net";
     private $remoteDatabase = "railway";
     private $remoteUsername = "root";
-    private $remotePassword = "AgQKHIuBjfjqlbOibzQDfCUEYjqVSyKE";
-    private $remotePort = 45501;
+    private $remotePassword = "gmaCOkQPJTYzlkEpPHknwxUhrMALOJot";
+    private $remotePort = 39983;
     
     // =====================================================
     // INFINITYFREE / PRODUCTION DATABASE CREDENTIALS
